@@ -1,9 +1,9 @@
-Getting and Cleaning Data Course Project
+## Getting and Cleaning Data Course Project
 ==================================================================
 This repository is about
 Human Activity Recognition Using Smartphones Dataset
 ==================================================================
-Norma Ruiz - Date: 17-May-2015
+### Norma Ruiz - Date: 17-May-2015
 ==================================================================
 Introduction
 
