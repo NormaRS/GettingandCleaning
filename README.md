@@ -49,3 +49,11 @@ For each record it is provided:
 ### The tidy data set name
 
 step5_file.txt
+
+### Files in repository
+
+The GettingandCleaning repository shoul contain:
+* README.md
+* run_analysis.R
+* CodeBook.md
+* Tidy data set: "step5_file.txt"
