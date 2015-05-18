@@ -53,7 +53,7 @@ The purpose of this code book is to describe the variables, the data, and any tr
    Data frames: subject_test, y_test, X_test.
 * Merge train and test data in all_data data frame (rbind).
 
-2. Extracts only the measurements on the mean and standard deviation 
+##### 2. Extracts only the measurements on the mean and standard deviation 
     for each measurement.
 
  * Select columns ending in mean() and std() (function grep). Total 66 columns.
@@ -94,23 +94,23 @@ The purpose of this code book is to describe the variables, the data, and any tr
 [65] "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
 [67] "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()" 
  
-3. Uses descriptive activity names to name the activities in the data set
+##### 3. Uses descriptive activity names to name the activities in the data set
 
  * Substitute activity labels in sub_data (column 2) with activity names in activity_lables data frame.
- * Change column 2 name in sub_data to "activity_name"
+ * Change column 2 name in sub_data to "activity_name".
  
-4. Appropiately labels the data set with descriptive variable names.
+##### 4. Appropiately labels the data set with descriptive variable names.
 
  * All columns in the sub_data data frame already have the proper name. This was done in previos steps.
    Write a data set with names in file: "step4_file.txt".
 
-5. From the data set in sept 4, creates a second, independent tidy data set 
+##### 5. From the data set in sept 4, creates a second, independent tidy data set 
     with the average of each variable for each activity and each subject.
 
  * Group data from sub_data by subject + activity and obtain the average of each variable (66 cases) (ddply).
     Write a final tidy data set in file: "step5_file.txt"
 
-### The tidy data set
+#### Tidy data set
 
 File name: "step5_file.txt"
 
