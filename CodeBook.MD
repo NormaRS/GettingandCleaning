@@ -55,29 +55,64 @@ The purpose of this code book is to describe the variables, the data, and any tr
 
 2. Extracts only the measurements on the mean and standard deviation 
     for each measurement.
+
+ * Select columns ending in mean() and std() (function grep). Total 66 columns.
+    These columns were store in sub_data data frame.
+    subject + activity + 66 columns:
+ [1] "subject_id"                  "activity_name"              
+ [3] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          
+ [5] "tBodyAcc-mean()-Z"           "tBodyAcc-std()-X"           
+ [7] "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"           
+ [9] "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"       
+[11] "tGravityAcc-mean()-Z"        "tGravityAcc-std()-X"        
+[13] "tGravityAcc-std()-Y"         "tGravityAcc-std()-Z"        
+[15] "tBodyAccJerk-mean()-X"       "tBodyAccJerk-mean()-Y"      
+[17] "tBodyAccJerk-mean()-Z"       "tBodyAccJerk-std()-X"       
+[19] "tBodyAccJerk-std()-Y"        "tBodyAccJerk-std()-Z"       
+[21] "tBodyGyro-mean()-X"          "tBodyGyro-mean()-Y"         
+[23] "tBodyGyro-mean()-Z"          "tBodyGyro-std()-X"          
+[25] "tBodyGyro-std()-Y"           "tBodyGyro-std()-Z"          
+[27] "tBodyGyroJerk-mean()-X"      "tBodyGyroJerk-mean()-Y"     
+[29] "tBodyGyroJerk-mean()-Z"      "tBodyGyroJerk-std()-X"      
+[31] "tBodyGyroJerk-std()-Y"       "tBodyGyroJerk-std()-Z"      
+[33] "tBodyAccMag-mean()"          "tBodyAccMag-std()"          
+[35] "tGravityAccMag-mean()"       "tGravityAccMag-std()"       
+[37] "tBodyAccJerkMag-mean()"      "tBodyAccJerkMag-std()"      
+[39] "tBodyGyroMag-mean()"         "tBodyGyroMag-std()"         
+[41] "tBodyGyroJerkMag-mean()"     "tBodyGyroJerkMag-std()"     
+[43] "fBodyAcc-mean()-X"           "fBodyAcc-mean()-Y"          
+[45] "fBodyAcc-mean()-Z"           "fBodyAcc-std()-X"           
+[47] "fBodyAcc-std()-Y"            "fBodyAcc-std()-Z"           
+[49] "fBodyAccJerk-mean()-X"       "fBodyAccJerk-mean()-Y"      
+[51] "fBodyAccJerk-mean()-Z"       "fBodyAccJerk-std()-X"       
+[53] "fBodyAccJerk-std()-Y"        "fBodyAccJerk-std()-Z"       
+[55] "fBodyGyro-mean()-X"          "fBodyGyro-mean()-Y"         
+[57] "fBodyGyro-mean()-Z"          "fBodyGyro-std()-X"          
+[59] "fBodyGyro-std()-Y"           "fBodyGyro-std()-Z"          
+[61] "fBodyAccMag-mean()"          "fBodyAccMag-std()"          
+[63] "fBodyBodyAccJerkMag-mean()"  "fBodyBodyAccJerkMag-std()"  
+[65] "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
+[67] "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()" 
+ 
 3. Uses descriptive activity names to name the activities in the data set
+
+ * Substitute activity labels in sub_data (column 2) with activity names in activity_lables data frame.
+ * Change column 2 name in sub_data to "activity_name"
+ 
 4. Appropiately labels the data set with descriptive variable names.
+
+ * All columns in the sub_data data frame already have the proper name. This was done in previos steps.
+   Write a data set with names in file: "step4_file.txt".
+
 5. From the data set in sept 4, creates a second, independent tidy data set 
     with the average of each variable for each activity and each subject.
 
+ * Group data from sub_data by subject + activity and obtain the average of each variable (66 cases) (ddply).
+    Write a final tidy data set in file: "step5_file.txt"
 
-1. Merges the training and the test sets to create one data set
+### The tidy data set
 
-
-
-
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-
-3. Uses descriptive activity names to name the activities in the data set
-
-4. Appropriately labels the data set with descriptive variable names. 
-
-5. From the data set in activity 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-
-### The tidy data set name
-
-step5_file.txt
+File name: "step5_file.txt"
 
 The structure of this file is:
 
