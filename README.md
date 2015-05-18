@@ -1,4 +1,3 @@
-# GettingandCleaning Repository #
 Getting and Cleaning Data Course Project
 ==================================================================
 This repository is about
