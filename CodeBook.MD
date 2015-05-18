@@ -17,7 +17,7 @@ The purpose of this code book is to describe the variables, the data, and any tr
 
 #### The steps to prepare a tidy data set are:
 
-##### 1. Merges the training and the test sets to create one data set
+##### 1. Merges the training and the test sets to create one data set.
 
 * The working directory is: "UCIHARdataset".
 * Load names of measurement variables in feature data frame.
@@ -53,12 +53,12 @@ The purpose of this code book is to describe the variables, the data, and any tr
    Data frames: subject_test, y_test, X_test.
 * Merge train and test data in all_data data frame (rbind).
 
-##### 2. Extracts only the measurements on the mean and standard deviation 
-    for each measurement.
+##### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
  * Select columns ending in mean() and std() (function grep). Total 66 columns.
-    These columns were store in sub_data data frame.
+    These columns were store in sub_data data frame. 
     subject + activity + 66 columns:
+
  [1] "subject_id"                  "activity_name"              
  [3] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          
  [5] "tBodyAcc-mean()-Z"           "tBodyAcc-std()-X"           
@@ -94,7 +94,7 @@ The purpose of this code book is to describe the variables, the data, and any tr
 [65] "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
 [67] "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()" 
  
-##### 3. Uses descriptive activity names to name the activities in the data set
+##### 3. Uses descriptive activity names to name the activities in the data set.
 
  * Substitute activity labels in sub_data (column 2) with activity names in activity_lables data frame.
  * Change column 2 name in sub_data to "activity_name".
@@ -104,8 +104,7 @@ The purpose of this code book is to describe the variables, the data, and any tr
  * All columns in the sub_data data frame already have the proper name. This was done in previos steps.
    Write a data set with names in file: "step4_file.txt".
 
-##### 5. From the data set in sept 4, creates a second, independent tidy data set 
-    with the average of each variable for each activity and each subject.
+##### 5. From the data set in sept 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
  * Group data from sub_data by subject + activity and obtain the average of each variable (66 cases) (ddply).
     Write a final tidy data set in file: "step5_file.txt"
