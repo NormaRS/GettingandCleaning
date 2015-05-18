@@ -27,20 +27,20 @@ The steps to prepare a tidy data set are:
 
 1. Merges the training and the test sets to create one data set
 
-The working directory is: "UCIHARdataset"
-Load names of measurement variables in feature data.frame  
+* The working directory is: "UCIHARdataset"
+* Load names of measurement variables in feature data.frame  
    input data set: "features.txt"
-Load activity labels in activity_labels data.frame
+* Load activity labels in activity_labels data.frame
    input data set: "activity_labels.txt"
-Assign name to activity_labels data.frame ("activity_id","activity_name")
-Load observations (data values) Training set into X_train data frame
+* Assign name to activity_labels data.frame ("activity_id","activity_name")
+* Load observations (data values) Training set into X_train data frame
    input data set: "train/X_train.txt"
    Each row in the data set begins with 2 blanks. Is necesary to remove them
    in order to load the data (function gsub)
-Assign names to training data in X_train stored in features(column 2)
-Load activity labels for training data in y_train data.frame
+* Assign names to training data in X_train stored in features(column 2)
+* Load activity labels for training data in y_train data.frame
    input data set "train/y_train.txt"
-Assign name to the only columna of y_train ("activity_id")
+* Assign name to the only columna of y_train ("activity_id")
 ## X_test (Testing set - observations - data values)  
    data <- readLines("test/X_test.txt")
    csv.data <- gsub("  ", " ", data)
