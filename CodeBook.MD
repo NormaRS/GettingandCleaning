@@ -119,6 +119,6 @@ The structure of this file is:
 * 68 columns: 1 subject + 1 activity + 66 feature (measurements)
 
 Just in case.-
-The tidy data set "step5_file.txt" can be loaded with:
-backdata <- read.table("step5_file.txt",sep=" ",header=TRUE); 
-head(backdata,3)
+ * The tidy data set "step5_file.txt" can be loaded with:
+ * backdata <- read.table("step5_file.txt",sep=" ",header=TRUE); 
+ * head(backdata,3)
