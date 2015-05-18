@@ -35,7 +35,7 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-Files used to prepare the Tidy data set are:
+### Files used to prepare the Tidy data set are:
 ============================================
 - 'features.txt': List of all features.
 - 'activity_labels.txt': Links the class labels with their activity name.
