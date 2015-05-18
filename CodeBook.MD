@@ -15,17 +15,9 @@ The purpose of this code book is to describe the variables, the data, and any tr
 * 'train/subject_train.txt': Training subjects. 
 * 'train/subject_test.txt': Test subjects.
 
-The steps to prepare a tidy data set are:
- 1. Merges the training and the test sets to create one data set
- 2. Extracts only the measurements on the mean and standard deviation 
-    for each measurement.
- 3. Uses descriptive activity names to name the activities in the data set
- 4. Appropiately labels the data set with descriptive variable names.
- 5. From the data set in sept 4, creates a second, independent tidy data set 
-    with the average of each variable for each activity and each subject.
+#### The steps to prepare a tidy data set are:
 
-
-1. Merges the training and the test sets to create one data set
+##### 1. Merges the training and the test sets to create one data set
 
 * The working directory is: "UCIHARdataset"
 * Load names of measurement variables in feature data.frame  
@@ -41,6 +33,7 @@ The steps to prepare a tidy data set are:
 * Load activity labels for training data in y_train data.frame
    input data set "train/y_train.txt"
 * Assign name to the only columna of y_train ("activity_id")
+
 ## X_test (Testing set - observations - data values)  
    data <- readLines("test/X_test.txt")
    csv.data <- gsub("  ", " ", data)
@@ -65,6 +58,18 @@ The steps to prepare a tidy data set are:
    test_data <- cbind(subject_test,y_test,X_test)
 ## merge train and test data
    all_data <- rbind(train_data,test_data)
+
+2. Extracts only the measurements on the mean and standard deviation 
+    for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropiately labels the data set with descriptive variable names.
+5. From the data set in sept 4, creates a second, independent tidy data set 
+    with the average of each variable for each activity and each subject.
+
+
+1. Merges the training and the test sets to create one data set
+
+
 
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
