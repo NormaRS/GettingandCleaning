@@ -102,12 +102,12 @@ The purpose of this code book is to describe the variables, the data, and any tr
 ##### 4. Appropiately labels the data set with descriptive variable names.
 
  * All columns in the sub_data data frame already have the proper name. This was done in previous steps.
-   Write a data set with names in file: "step4_file.txt".
+ * Write a data set with names in file: "step4_file.txt".
 
 ##### 5. From the data set in sept 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
  * Group data from sub_data by subject + activity and obtain the average of each variable (66 cases) (ddply).
-    Write a final tidy data set in file: "step5_file.txt"
+ * Write a final tidy data set in file: "step5_file.txt"
 
 #### Tidy data set
 
