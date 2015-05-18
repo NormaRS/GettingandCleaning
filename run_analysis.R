@@ -12,7 +12,7 @@
 ## 5. From the data set in sept 4, creates a second, independent tidy data set 
 ##    with the average of each variable for each activity and each subject.
 ## Set working directory
-   setwd("./UCIHARDataset")
+setwd("~/Documents/NRS_iMAC/norma_2015/infomedia/data science/3 Getting and Cleaning Data/course project/UCIHARDataset")
 ## files in "UCIHARdataset" directory:
 ## 'features.txt': List of all features. (Names of measurement variables)
 ## 'activity_labels.txt': Links the class labels with their activity name.
