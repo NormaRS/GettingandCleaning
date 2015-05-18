@@ -1,6 +1,5 @@
 ## Code Book
 #### Norma Ruiz - Date: 17-May-2015
-==================================================================
 ### Objective
 
 The purpose of this code book is to describe the variables, the data, and any transformations or work performed to clean up the data.
