@@ -5,7 +5,16 @@ Human Activity Recognition Using Smartphones Dataset
 ==================================================================
 Norma Ruiz - Date: 17-May-2015
 ==================================================================
-The activities for this assignment are:
+Introduction
+
+The purpose of this project is to collect, work with, and clean a data set. 
+The goal is to prepare tidy data that can be used for later analysis. 
+Main activities: 
+1) Prepare a tidy data set 
+2) Submit a link to a Github repository with the script for performing the analysis
+3) Write a code book that describes the variables, the data, and any transformations or work performed to clean up the data called CodeBook.md.   
+
+The steps for this assignment are:
 - 
 1. Create one R script called run_analysis.R that merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
