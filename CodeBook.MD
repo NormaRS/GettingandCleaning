@@ -19,16 +19,16 @@ The purpose of this code book is to describe the variables, the data, and any tr
 
 ##### 1. Merges the training and the test sets to create one data set
 
-* The working directory is: "UCIHARdataset"
+* The working directory is: "UCIHARdataset".
 * Load names of measurement variables in feature data frame.
-   Input data set: "features.txt"
+   Input data set: "features.txt".
 * Load activity labels in activity_labels data frame.
    Input data set: "activity_labels.txt"
-* Assign name to activity_labels data.frame ("activity_id","activity_name")
-* Load observations (data values) Training set into X_train data frame
-   Input data set: "train/X_train.txt"
+* Assign name to activity_labels data.frame ("activity_id","activity_name").
+* Load observations (data values) training set into X_train data frame.
+   Input data set: "train/X_train.txt".
    Each row in the data set begins with 2 blanks. Is was necesary to remove them
-   in order to load the data (function gsub)
+   in order to load the data (function gsub).
 * Assign names to training data in X_train stored in features(column 2).
 * Load activity labels for training data in y_train data frame
    Input data set "train/y_train.txt"
