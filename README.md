@@ -1,7 +1,6 @@
 ## Getting and Cleaning Data Course Project
 ==================================================================
-This repository is about
-Human Activity Recognition Using Smartphones Dataset
+This repository is about Human Activity Recognition Using Smartphones Dataset
 ==================================================================
 ### Norma Ruiz - Date: 17-May-2015
 ==================================================================
@@ -23,7 +22,7 @@ The steps for this assignment are:
 5. From the data set in activity 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 About the experiment:
-===========================================
+
 The experiment have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 -
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). 
