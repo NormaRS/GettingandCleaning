@@ -55,7 +55,7 @@ The purpose of this code book is to describe the variables, the data, and any tr
 
 ##### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
- * Select columns ending in mean() and std() (function grep). Total 66 columns.
+ * Select columns that include mean() and std() in their names (function grep). Total 66 columns.
     These columns were store in sub_data data frame. 
     The following list includes the columns of sub_data (subject + activity + 66 data columns):
 
