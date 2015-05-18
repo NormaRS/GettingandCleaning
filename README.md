@@ -45,3 +45,7 @@ For each record it is provided:
 * 'test/y_test.txt': Test labels.
 * 'train/subject_train.txt': Training subjects. 
 * 'train/subject_test.txt': Test subjects.
+
+### The tidy data set name
+
+step5_file.txt
